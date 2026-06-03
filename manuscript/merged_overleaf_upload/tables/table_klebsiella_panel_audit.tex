@@ -1,0 +1,42 @@
+\begin{table}[ht]
+\centering
+\scriptsize
+\caption{Full K. pneumoniae six-drug audit results and Weis ceftriaxone extension.}
+\label{tab:klebsiella-panel-audit}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lllrrrrll}
+\toprule
+Model & Site & Drug & Raw AUC & Centered AUC & Background AUC & Retention (\%) & Strata & Interpretation \\
+\midrule
+CNN/Mega & A-2018 & Amox-Clav & 0.743 & 0.532 & 0.885 & 79.6 & 3 & background only competitive and weak residual \\
+CNN/Mega & DRIAMS-B & Amox-Clav & 0.331 & -- & 0.994 & 0.0 & 0 & not interpretable or sparse \\
+CNN/Mega & DRIAMS-C & Amox-Clav & 0.646 & 0.473 & 0.931 & 38.6 & 3 & background only competitive and weak residual \\
+CNN/Mega & DRIAMS-D & Amox-Clav & 0.612 & 0.484 & 0.888 & 93.2 & 6 & background only competitive and weak residual \\
+CNN/Mega & A-2018 & FEP & 0.896 & -- & 0.999 & 0.0 & 0 & not interpretable or sparse \\
+CNN/Mega & DRIAMS-B & FEP & 0.443 & -- & 1.000 & 0.0 & 0 & not interpretable or sparse \\
+CNN/Mega & DRIAMS-C & FEP & 0.649 & -- & 1.000 & 0.0 & 0 & not interpretable or sparse \\
+CNN/Mega & DRIAMS-D & FEP & 0.647 & 0.396 & 0.998 & 0.9 & 1 & background only competitive and weak residual \\
+CNN/Mega & A-2018 & CAZ & 0.809 & 0.208 & 0.996 & 2.1 & 1 & background only competitive and weak residual \\
+CNN/Mega & DRIAMS-B & CAZ & 0.371 & -- & 1.000 & 0.0 & 0 & not interpretable or sparse \\
+CNN/Mega & DRIAMS-C & CAZ & 0.679 & -- & 0.999 & 0.0 & 0 & not interpretable or sparse \\
+CNN/Mega & DRIAMS-D & CAZ & 0.623 & 0.929 & 0.999 & 0.5 & 1 & cautionary background only competitive but residual signal \\
+CNN/Mega & A-2018 & CRO & 0.804 & 0.500 & 0.981 & 3.3 & 1 & background only competitive and weak residual \\
+CNN/Mega & DRIAMS-B & CRO & 0.404 & -- & 1.000 & 0.0 & 0 & not interpretable or sparse \\
+CNN/Mega & DRIAMS-C & CRO & 0.698 & -- & 1.000 & 0.0 & 0 & not interpretable or sparse \\
+CNN/Mega & DRIAMS-D & CRO & 0.630 & 0.424 & 0.973 & 81.8 & 2 & background only competitive and weak residual \\
+CNN/Mega & A-2018 & Cipro & 0.788 & 0.634 & 0.796 & 84.6 & 5 & background only competitive but residual signal \\
+CNN/Mega & DRIAMS-B & Cipro & 0.578 & 0.763 & 0.809 & 79.1 & 1 & background only competitive but residual signal \\
+CNN/Mega & DRIAMS-C & Cipro & 0.702 & 0.634 & 0.939 & 53.7 & 3 & background only competitive but residual signal \\
+CNN/Mega & DRIAMS-D & Cipro & 0.587 & 0.498 & 0.598 & 96.4 & 6 & background only competitive and weak residual \\
+CNN/Mega & A-2018 & Piperacillin-Tazobactam & 0.738 & 0.531 & 0.985 & 7.7 & 2 & background only competitive and weak residual \\
+CNN/Mega & DRIAMS-B & Piperacillin-Tazobactam & 0.376 & -- & 0.923 & 0.0 & 0 & not interpretable or sparse \\
+CNN/Mega & DRIAMS-C & Piperacillin-Tazobactam & 0.665 & 0.477 & 0.969 & 15.1 & 1 & background only competitive and weak residual \\
+CNN/Mega & DRIAMS-D & Piperacillin-Tazobactam & 0.598 & 0.526 & 0.659 & 95.3 & 7 & background only competitive and weak residual \\
+Weis LR & DRIAMS-B & CRO & 0.509 & 0.509 & -- & 100.0 & 1 & near chance or ambiguous \\
+Weis LR & DRIAMS-C & CRO & 0.672 & 0.672 & -- & 100.0 & 1 & cautionary moderate within background signal \\
+Weis LR & DRIAMS-D & CRO & 0.596 & 0.596 & -- & 100.0 & 1 & weak or partial within background signal \\
+\bottomrule
+\end{tabular}%
+}
+\vspace{2mm}\parbox{0.95\linewidth}{\footnotesize The CNN/Mega rows summarize the K. pneumoniae six-drug panel. The Weis LR ceftriaxone rows are reported separately because they come from the official-panel compatibility export; background-only AUC was not computed for those rows.}
+\end{table}

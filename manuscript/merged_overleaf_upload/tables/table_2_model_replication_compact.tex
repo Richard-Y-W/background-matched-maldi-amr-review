@@ -1,0 +1,21 @@
+\begin{table}[ht]
+\centering
+\small
+\caption{Compact model-family replication of raw-to-background-centered attenuation.}
+\label{tab:model-replication-compact}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{llcccc}
+\toprule
+Site & Drug & CNN/Mega & LGBM multi & LGBM single & Weis LR \\
+\midrule
+A-2018 & Cipro & 0.823->0.703 & 0.828->0.640 & 0.828->0.652 & 0.734->0.689 \\
+DRIAMS-C & Cipro & 0.750->0.646 & 0.814->0.637 & 0.804->0.682 & 0.625->0.816* \\
+DRIAMS-D & Cipro & 0.671->0.596 & 0.723->0.576 & 0.712->0.591 & 0.667->0.620 \\
+A-2018 & Amox-Clav & 0.650->0.541 & 0.635->0.482 & 0.614->0.465 & 0.564->0.529 \\
+DRIAMS-C & Amox-Clav & 0.535->0.497 & 0.593->0.518 & 0.559->0.533 & 0.626->0.578 \\
+DRIAMS-D & Amox-Clav & 0.557->0.486 & 0.580->0.449 & 0.559->0.487 & 0.652->0.524 \\
+\bottomrule
+\end{tabular}%
+}
+\vspace{2mm}\parbox{0.95\linewidth}{\footnotesize Cells show raw AUC -> background-centered AUC. Asterisks mark caution rows with low matched support. Weis LR cells combine the temporal A-2018 export with existing Weis-style DRIAMS-C/DRIAMS-D compatibility rows; they are compatibility evidence rather than pooled benchmarks with the CNN/LightGBM panel.}
+\end{table}

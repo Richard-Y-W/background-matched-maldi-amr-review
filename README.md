@@ -76,11 +76,11 @@ The latest publication vector figures are in [`manuscript/figures/`](manuscript/
 | Fig. 4 | [`figure_5_public_wgs_proteomic_support.pdf`](manuscript/figures/figure_5_public_wgs_proteomic_support.pdf) | Independent WGS-linked UPEC support for lineage-associated MALDI signal. |
 | Supp. Fig. S1 | [`figure_4_cross_resistance_network.pdf`](manuscript/figures/figure_4_cross_resistance_network.pdf) | Full co-resistance network/label ecology. |
 | Supp. Fig. S2 | [`figure_6_falsification_controls.pdf`](manuscript/figures/figure_6_falsification_controls.pdf) | Background-burden and shuffled-label guardrails. |
-| Supp. Fig. S3 | [`figure_6_saureus_oxacillin_audit.pdf`](manuscript/figures/figure_6_saureus_oxacillin_audit.pdf) | Focused *S. aureus*/oxacillin background-matched extension. |
-| Supp. Fig. S4 | [`figure_6_three_way_decomposition.pdf`](manuscript/figures/figure_6_three_way_decomposition.pdf) | Four-panel, three-score decomposition: raw MALDI AUC vs co-resistance-only AUC vs background-centered MALDI AUC across *E. coli*, *S. aureus*, and *K. pneumoniae* examples. |
-| Supp. Fig. S5 | [`figure_7_deployment_decision_flow.pdf`](manuscript/figures/figure_7_deployment_decision_flow.pdf) | Deployment decision flow for retained, collapsed, and sparse audit outcomes. |
-| Supp. Fig. S6 | [`figure_7_framework_comparison.pdf`](manuscript/figures/figure_7_framework_comparison.pdf) | Positioning against Weis stratification and general reporting frameworks. |
-| Supp. Fig. S7 | [`figure_8_audit_atlas_summary.pdf`](manuscript/figures/figure_8_audit_atlas_summary.pdf) | Audit atlas summary across model, organism, drug, and site extensions. |
+| Supp. Fig. S3 | [`figure_7_saureus_oxacillin_audit.pdf`](manuscript/figures/figure_7_saureus_oxacillin_audit.pdf) | Focused *S. aureus*/oxacillin background-matched extension. |
+| Supp. Fig. S4 | [`figure_8_three_way_decomposition.pdf`](manuscript/figures/figure_8_three_way_decomposition.pdf) | Four-panel, three-score decomposition: raw MALDI AUC vs co-resistance-only AUC vs background-centered MALDI AUC across *E. coli*, *S. aureus*, and *K. pneumoniae* examples. |
+| Supp. Fig. S5 | [`figure_9_deployment_decision_flow.pdf`](manuscript/figures/figure_9_deployment_decision_flow.pdf) | Deployment decision flow for retained, collapsed, and sparse audit outcomes. |
+| Supp. Fig. S6 | [`figure_10_framework_comparison.pdf`](manuscript/figures/figure_10_framework_comparison.pdf) | Positioning against Weis stratification and general reporting frameworks. |
+| Supp. Fig. S7 | [`figure_11_audit_atlas_summary.pdf`](manuscript/figures/figure_11_audit_atlas_summary.pdf) | Audit atlas summary across model, organism, drug, and site extensions. |
 
 The PNG summaries in [`outputs/final_framework_outputs/`](outputs/final_framework_outputs/) provide a repository-friendly view of the same audit logic, including raw-to-centered AUC, matched-retention diagnostics, co-resistance structure, WGS support, falsification controls, deployment rules, and published-style model comparisons.
 

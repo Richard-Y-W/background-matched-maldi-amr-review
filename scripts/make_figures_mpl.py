@@ -873,7 +873,7 @@ def figure_5_public_support(wgs: pd.DataFrame, enrichment: pd.DataFrame) -> Path
 
 def figure_6_three_way_decomposition(primary_df, sa_summary_df,
                                       ecoli_bg_df, saureus_bg_df) -> Path:
-    path = FIG_DIR / "figure_6_three_way_decomposition.pdf"
+    path = FIG_DIR / "figure_8_three_way_decomposition.pdf"
     df = _build_three_way(primary_df, sa_summary_df, ecoli_bg_df, saureus_bg_df)
     df.rename(columns={"bg_auc": "bg_only_auc", "cen_auc": "centered_auc"}).to_csv(
         SOURCE_DIR / "source_data_fig6_three_way_decomposition.csv",
@@ -998,7 +998,7 @@ def figure_6_falsification_controls(df: pd.DataFrame) -> Path:
 
 
 def figure_6_saureus_oxacillin_audit(df: pd.DataFrame) -> Path:
-    path = FIG_DIR / "figure_6_saureus_oxacillin_audit.pdf"
+    path = FIG_DIR / "figure_7_saureus_oxacillin_audit.pdf"
     df = df[df["pair"].astype(str).str.contains("S. aureus", regex=False)].copy()
     df = df.sort_values("cnn_minus_bg")
     colors = [GREEN if v > 0 else M_GRAY for v in df["cnn_minus_bg"]]
@@ -1034,7 +1034,7 @@ def figure_6_saureus_oxacillin_audit(df: pd.DataFrame) -> Path:
 
 
 def figure_7_deployment_decision_flow(df: pd.DataFrame) -> Path:
-    path = FIG_DIR / "figure_7_deployment_decision_flow.pdf"
+    path = FIG_DIR / "figure_9_deployment_decision_flow.pdf"
     fig = plt.figure(figsize=(10.8, 5.6))
     ax = fig.add_axes([0, 0, 1, 1])
     ax.axis("off")
@@ -1079,7 +1079,7 @@ def figure_7_deployment_decision_flow(df: pd.DataFrame) -> Path:
 
 
 def figure_8_audit_atlas_summary(summary: pd.DataFrame) -> Path:
-    path = FIG_DIR / "figure_8_audit_atlas_summary.pdf"
+    path = FIG_DIR / "figure_11_audit_atlas_summary.pdf"
     df = summary.copy()
     preferred = [
         "ecoli_cnn",

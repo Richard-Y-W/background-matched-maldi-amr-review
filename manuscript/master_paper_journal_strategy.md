@@ -49,7 +49,7 @@ The critique's recommendation to add `Staphylococcus aureus`/oxacillin has now b
    - Purpose: define raw AUC, matched AUC, background-centered AUC, pairwise within-background accuracy, and matched retention.
 
 2. **Figure 2: Three-way decomposition.**
-   - Use `manuscript/figures/figure_6_three_way_decomposition.pdf`.
+   - Use `manuscript/figures/figure_8_three_way_decomposition.pdf`.
    - Purpose: make the central decomposition visually immediate: raw MALDI AUC, no-spectrum co-resistance-only AUC, and background-centered MALDI AUC for `E. coli`/ciprofloxacin, `E. coli`/amoxicillin-clavulanic acid, and `S. aureus`/oxacillin.
    - This should be the centerpiece because it directly answers the reviewer question: how much apparent MALDI performance is already predictable from the AST background alone?
 
@@ -71,7 +71,7 @@ The critique's recommendation to add `Staphylococcus aureus`/oxacillin has now b
 - Model-family comparison: important, but secondary to the primary claim. Move `manuscript/figures/figure_3_model_family_replication.pdf` and Table 2 to Supplementary Figure/Table unless the target journal asks for a larger main display set.
 - Full cross-resistance network: move `manuscript/figures/figure_4_cross_resistance_network.pdf` to supplement if Figure 2 already establishes the co-resistance-only shortcut. The Results text can cite the strongest phi edges without making the heatmap a main display item.
 - Falsification controls: important guardrail, but too technical for main flow. Move `manuscript/figures/figure_6_falsification_controls.pdf` and Table 15 to supplement; mention the headline in Results and Discussion.
-- `S. aureus`/oxacillin detail figure: keep `manuscript/figures/figure_6_saureus_oxacillin_audit.pdf` in supplement because the main three-way decomposition already includes the second-organism check.
+- `S. aureus`/oxacillin detail figure: keep `manuscript/figures/figure_7_saureus_oxacillin_audit.pdf` in supplement because the main three-way decomposition already includes the second-organism check.
 - Weis/Borgwardt official LR parity and six-drug stress test: supplement only. It strengthens reproducibility and audit portability, but the main paper should not look like it is mainly a Weis replication paper.
 - MARISMa external stress test: supplement only. It is useful as a boundary condition and failed transfer case, not part of the main positive argument.
 - Deployment decision flow and framework comparison: supplement or final discussion schematic only if the target journal wants translational guidance. Otherwise, state the decision rules in text.

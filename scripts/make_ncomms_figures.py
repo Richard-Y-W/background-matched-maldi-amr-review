@@ -604,7 +604,7 @@ def figure_6_three_way_decomposition(
     Hollow square  = co-resistance-only AUC (no spectra, AST background only)
     Filled diamond = background-centred MALDI AUC
     """
-    path = FIG_DIR / "figure_6_three_way_decomposition.pdf"
+    path = FIG_DIR / "figure_8_three_way_decomposition.pdf"
     pagesize = (11 * inch, 5.5 * inch)
     c = canvas.Canvas(str(path), pagesize=pagesize)
     w, h = pagesize
@@ -715,7 +715,7 @@ COMPARISON_ROWS = [
 
 def figure_7_framework_comparison() -> Path:
     """Comparison table of this framework vs prior MALDI-AMR work and TRIPOD+AI."""
-    path = FIG_DIR / "figure_7_framework_comparison.pdf"
+    path = FIG_DIR / "figure_10_framework_comparison.pdf"
     w, h = 7.8 * inch, 4.20 * inch
     c = canvas.Canvas(str(path), pagesize=(w, h))
     white_page(c, w, h)
