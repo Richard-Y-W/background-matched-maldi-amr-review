@@ -4,7 +4,7 @@ This folder contains an Overleaf-ready manuscript and vector PDF figures.
 
 ## Main files
 
-- `main.tex` - Nature Communications-style manuscript with embedded references.
+- `main.tex` -  manuscript with embedded references.
 - `references.bib` - BibTeX convenience file for citation managers.
 - `figures/*.pdf` - vector figures generated from repository CSV outputs.
 - `tables/*.tex` - `booktabs` LaTeX tables included by `main.tex`.
