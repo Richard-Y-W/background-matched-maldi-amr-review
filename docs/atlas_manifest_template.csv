@@ -1,0 +1,9 @@
+atlas_id,predictions_csv,model_name,scope,notes,id_col
+ecoli_cnn,outputs/analysis_outputs/ecoli_cnn_background_matched_contrastive/background_matched_predictions.csv,CNN/Mega,E. coli six-drug panel,primary model,uid
+ecoli_lgbm_single,outputs/analysis_outputs/ecoli_lgbm_single_background_audit/normalized_predictions.csv,LightGBM single-task,E. coli six-drug panel,model-class replication,uid
+ecoli_lgbm_multi,outputs/analysis_outputs/lgbm_prediction_exports/ecoli/lgbm_multi_predictions_long.csv,LightGBM multi-task,E. coli six-drug panel,model-class replication,isolate_id
+saureus_cnn,outputs/analysis_outputs/saureus_panel_oxa_background_audit/normalized_predictions.csv,CNN/Mega,S. aureus oxacillin panel,second-organism check,uid
+saureus_lgbm_single,outputs/analysis_outputs/saureus_lgbm_single_oxa_background_audit/normalized_predictions.csv,LightGBM single-task,S. aureus oxacillin panel,model-class replication,uid
+saureus_lgbm_multi,outputs/analysis_outputs/saureus_lgbm_multi_oxa_background_audit/normalized_predictions.csv,LightGBM multi-task,S. aureus oxacillin panel,model-class replication,uid
+klebsiella_cnn,outputs/analysis_outputs/klebsiella_panel6_background_matched_contrastive/background_matched_predictions.csv,CNN/Mega,K. pneumoniae six-drug panel,third-organism extension,uid
+weis_lr_ecoli_temporal_a2018,outputs/analysis_outputs/weis_lr_ecoli6_temporal_a2018/weis_predictions_long.csv,Weis LR,E. coli six-drug temporal A-2018 panel,Weis temporal compatibility,isolate_id

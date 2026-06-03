@@ -1,0 +1,22 @@
+\begin{table}[ht]
+\centering
+\scriptsize
+\caption{Representative organism-extension audit rows.}
+\label{tab:organism-extension}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lllrrrrl}
+\toprule
+Organism/drug & Site & Model & Raw AUC & Centered AUC & Background AUC & Strata & Interpretation \\
+\midrule
+\textit{S. aureus} / Oxacillin & A-2018 & CNN/Mega & 0.838 & 0.763 & 0.762 & 9 & retained within-background signal \\
+\textit{S. aureus} / Oxacillin & DRIAMS-B & CNN/Mega & 0.775 & 0.864 & 0.795 & 1 & caution; sparse matched support \\
+\textit{S. aureus} / Oxacillin & DRIAMS-C & CNN/Mega & 0.725 & 0.699 & 0.627 & 2 & moderate within-background signal \\
+\textit{K. pneumoniae} / Ceftriaxone & A-2018 & CNN/Mega & 0.804 & 0.500 & 0.981 & 1 & collapsed to chance after matching \\
+\textit{K. pneumoniae} / Ceftriaxone & DRIAMS-B & CNN/Mega & 0.404 & -- & 1.000 & 0 & not interpretable; no valid strata \\
+\textit{K. pneumoniae} / Ceftriaxone & DRIAMS-C & CNN/Mega & 0.698 & -- & 1.000 & 0 & not interpretable; no valid strata \\
+\textit{K. pneumoniae} / Ceftriaxone & DRIAMS-D & CNN/Mega & 0.630 & 0.424 & 0.973 & 2 & background-sensitive weak residual \\
+\bottomrule
+\end{tabular}%
+}
+\vspace{2mm}\parbox{0.95\linewidth}{\footnotesize The organism-extension rows test whether the audit is only an \textit{E. coli}/ciprofloxacin story. \textit{S. aureus}/oxacillin is a second-organism retained-signal case. \textit{K. pneumoniae}/ceftriaxone is a third-organism background-sensitive or sparse-control case. Full \textit{K. pneumoniae} six-drug and Weis LR compatibility rows are reported in the Supplementary Information.}
+\end{table}

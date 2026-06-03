@@ -1,0 +1,11 @@
+Atlas set,Model,Scope,Rows,Drugs,Sites,Interpretable,Retained/partial,Background-sensitive
+ecoli_cnn,CNN/Mega,E. coli six-drug panel,23,6,4,18,8,9
+ecoli_lgbm_multi,LightGBM multi-task,E. coli six-drug panel,23,6,4,18,7,10
+ecoli_lgbm_single,LightGBM single-task,E. coli six-drug panel,23,6,4,18,6,11
+weis_lr_ecoli_temporal_a2018,Weis LR,E. coli six-drug temporal A-2018 panel,6,6,1,4,2,2
+saureus_cnn,CNN/Mega,S. aureus oxacillin panel,25,7,4,23,12,7
+saureus_lgbm_multi,LightGBM multi-task,S. aureus oxacillin panel,25,7,4,23,13,7
+saureus_lgbm_single,LightGBM single-task,S. aureus oxacillin panel,25,7,4,23,14,8
+klebsiella_cnn,CNN/Mega,K. pneumoniae six-drug panel,24,6,4,15,4,11
+weis_lr_klebsiella_ceftriaxone,Weis LR,K. pneumoniae ceftriaxone official-panel extension,3,1,3,3,2,0
+weis_lr_ecoli,Weis LR,E. coli Weis-style panel,17,6,3,9,4,5

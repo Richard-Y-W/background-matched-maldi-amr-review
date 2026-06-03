@@ -1,0 +1,11 @@
+atlas_id,model_name,scope,prediction_csv,n_matrix_rows,n_organisms,n_drugs,n_sites,n_interpretable,n_retained_or_partial,n_background_sensitive,n_not_interpretable,n_pre_specified,n_pre_specified_matched
+ecoli_cnn,CNN/Mega,E. coli six-drug panel,outputs/analysis_outputs/ecoli_cnn_background_matched_contrastive/background_matched_predictions.csv,23,1,6,4,18,8,9,5,8,8
+ecoli_lgbm_single,LightGBM single-task,E. coli six-drug panel,outputs/analysis_outputs/ecoli_lgbm_single_background_audit/normalized_predictions.csv,23,1,6,4,18,6,11,5,8,8
+ecoli_lgbm_multi,LightGBM multi-task,E. coli six-drug panel,outputs/analysis_outputs/lgbm_prediction_exports/ecoli/lgbm_multi_predictions_long.csv,23,1,6,4,18,7,10,5,8,6
+saureus_cnn,CNN/Mega,S. aureus oxacillin panel,outputs/analysis_outputs/saureus_panel_oxa_background_audit/normalized_predictions.csv,25,1,7,4,23,12,7,2,3,3
+saureus_lgbm_multi,LightGBM multi-task,S. aureus oxacillin panel,outputs/analysis_outputs/saureus_lgbm_multi_oxa_background_audit/normalized_predictions.csv,25,1,7,4,23,13,7,2,3,3
+saureus_lgbm_single,LightGBM single-task,S. aureus oxacillin panel,outputs/analysis_outputs/saureus_lgbm_single_oxa_background_audit/normalized_predictions.csv,25,1,7,4,23,14,8,2,3,3
+weis_lr_ecoli,Weis LR,E. coli Weis-style panel,outputs/weis_predictions_audit_analysis/normalized_predictions.csv,17,1,6,3,9,4,5,8,6,3
+weis_lr_klebsiella_ceftriaxone,Weis LR,K. pneumoniae ceftriaxone official-panel extension,outputs/analysis_outputs/weis_lr_klebsiella_ceftriaxone/weis_predictions_long.csv,3,1,1,3,3,2,0,0,3,1
+klebsiella_cnn,CNN/Mega,K. pneumoniae six-drug panel,outputs/analysis_outputs/klebsiella_panel6_background_matched_contrastive/background_matched_predictions.csv,24,1,6,4,15,4,11,9,4,4
+weis_lr_ecoli_temporal_a2018,Weis LR,E. coli six-drug temporal A-2018 panel,outputs/analysis_outputs/weis_lr_ecoli6_temporal_a2018/weis_predictions_long.csv,6,1,6,1,4,2,2,2,2,2

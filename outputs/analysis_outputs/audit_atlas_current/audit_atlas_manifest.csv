@@ -1,0 +1,11 @@
+atlas_id,predictions_csv,model_name,scope,notes,id_col
+ecoli_cnn,outputs/analysis_outputs/ecoli_cnn_background_matched_contrastive/background_matched_predictions.csv,CNN/Mega,E. coli six-drug panel,primary CNN/Mega export,uid
+ecoli_lgbm_single,outputs/analysis_outputs/ecoli_lgbm_single_background_audit/normalized_predictions.csv,LightGBM single-task,E. coli six-drug panel,local normalized export,uid
+ecoli_lgbm_multi,outputs/analysis_outputs/lgbm_prediction_exports/ecoli/lgbm_multi_predictions_long.csv,LightGBM multi-task,E. coli six-drug panel,model-class isolate-level export,isolate_id
+saureus_cnn,outputs/analysis_outputs/saureus_panel_oxa_background_audit/normalized_predictions.csv,CNN/Mega,S. aureus oxacillin panel,second-organism CNN/Mega export,uid
+saureus_lgbm_multi,outputs/analysis_outputs/saureus_lgbm_multi_oxa_background_audit/normalized_predictions.csv,LightGBM multi-task,S. aureus oxacillin panel,local normalized export,uid
+saureus_lgbm_single,outputs/analysis_outputs/saureus_lgbm_single_oxa_background_audit/normalized_predictions.csv,LightGBM single-task,S. aureus oxacillin panel,local normalized export,uid
+weis_lr_ecoli,outputs/weis_predictions_audit_analysis/normalized_predictions.csv,Weis LR,E. coli Weis-style panel,official-workflow compatibility export,uid
+weis_lr_klebsiella_ceftriaxone,outputs/analysis_outputs/weis_lr_klebsiella_ceftriaxone/weis_predictions_long.csv,Weis LR,K. pneumoniae ceftriaxone official-panel extension,third-organism atlas extension,isolate_id
+klebsiella_cnn,outputs/analysis_outputs/klebsiella_panel6_background_matched_contrastive/background_matched_predictions.csv,CNN/Mega,K. pneumoniae six-drug panel,third-organism CNN/Mega extension,uid
+weis_lr_ecoli_temporal_a2018,outputs/analysis_outputs/weis_lr_ecoli6_temporal_a2018/weis_predictions_long.csv,Weis LR,E. coli six-drug temporal A-2018 panel,temporal Weis LR export,isolate_id

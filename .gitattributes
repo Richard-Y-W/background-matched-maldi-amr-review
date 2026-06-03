@@ -1,0 +1,10 @@
+# Normalize line endings for all text files
+* text=auto
+
+# Lock generated CSV files to LF so cross-platform regeneration is idempotent
+example_predictions.csv text eol=lf
+outputs/**/*.csv text eol=lf
+manuscript/source_data/**/*.csv text eol=lf
+
+# Preserve the downloaded Weis temporal prediction export byte-for-byte.
+outputs/analysis_outputs/weis_lr_ecoli6_temporal_a2018/weis_predictions_long.csv -text

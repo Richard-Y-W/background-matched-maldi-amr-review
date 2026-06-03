@@ -1,0 +1,265 @@
+\begin{thebibliography}{28}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[{Antimicrobial Resistance Collaborators}(2022)]{amrCollaborators2022}
+{Antimicrobial Resistance Collaborators}.
+\newblock Global burden of bacterial antimicrobial resistance in 2019: a
+  systematic analysis.
+\newblock \emph{The Lancet}, 399\penalty0 (10325):\penalty0 629--655, 2022.
+\newblock \doi{10.1016/S0140-6736(21)02724-0}.
+
+\bibitem[Kumar et~al.(2006)Kumar, Roberts, Wood, Light, Parrillo, Sharma,
+  Suppes, Feinstein, Zanotti, Taiberg, Gurka, Kumar, and
+  Cheang]{kumar2006septicShock}
+Anand Kumar, Daniel Roberts, Kenneth~E. Wood, Bruce Light, Joseph~E. Parrillo,
+  Satendra Sharma, Robert Suppes, David Feinstein, Sergio Zanotti, Leo Taiberg,
+  Daniel Gurka, Aseem Kumar, and Mary Cheang.
+\newblock Duration of hypotension before initiation of effective antimicrobial
+  therapy is the critical determinant of survival in human septic shock.
+\newblock \emph{Critical Care Medicine}, 34\penalty0 (6):\penalty0 1589--1596,
+  2006.
+\newblock \doi{10.1097/01.CCM.0000217961.75225.E9}.
+
+\bibitem[Seymour et~al.(2017)Seymour, Gesten, Prescott, Friedrich, Iwashyna,
+  Phillips, Lemeshow, Osborn, Terry, and Levy]{seymour2017sepsis}
+Christopher~W. Seymour, Foster Gesten, Hallie~C. Prescott, Matthew~E.
+  Friedrich, Theodore~J. Iwashyna, Gary~S. Phillips, Stanley Lemeshow, Terry
+  Osborn, Kathleen~M. Terry, and Mitchell~M. Levy.
+\newblock Time to treatment and mortality during mandated emergency care for
+  sepsis.
+\newblock \emph{New England Journal of Medicine}, 376\penalty0 (23):\penalty0
+  2235--2244, 2017.
+\newblock \doi{10.1056/NEJMoa1703058}.
+
+\bibitem[Croxatto et~al.(2012)Croxatto, Prod'hom, and
+  Greub]{croxatto2012maldiReview}
+Antony Croxatto, Guy Prod'hom, and Gilbert Greub.
+\newblock Applications of maldi-tof mass spectrometry in clinical diagnostic
+  microbiology.
+\newblock \emph{FEMS Microbiology Reviews}, 36\penalty0 (2):\penalty0 380--407,
+  2012.
+\newblock \doi{10.1111/j.1574-6976.2011.00298.x}.
+
+\bibitem[van Belkum et~al.(2017)van Belkum, Welker, Pincus, Charrier, and
+  Girard]{vanbelkum2017maldiIssues}
+Alex van Belkum, Martin Welker, David Pincus, Jean-Pierre Charrier, and Vincent
+  Girard.
+\newblock Matrix-assisted laser desorption ionization time-of-flight mass
+  spectrometry in clinical microbiology: what are the current issues?
+\newblock \emph{Annals of Laboratory Medicine}, 37\penalty0 (6):\penalty0
+  475--483, 2017.
+\newblock \doi{10.3343/alm.2017.37.6.475}.
+
+\bibitem[Hou et~al.(2019)Hou, Chiang-Ni, and Teng]{hou2019maldiStatus}
+Tzu-Yin Hou, Chuan Chiang-Ni, and Lee-Jene Teng.
+\newblock Current status of maldi-tof mass spectrometry in clinical
+  microbiology.
+\newblock \emph{Journal of Food and Drug Analysis}, 27\penalty0 (2):\penalty0
+  404--414, 2019.
+\newblock \doi{10.1016/j.jfda.2019.01.001}.
+
+\bibitem[Weis et~al.(2020{\natexlab{a}})Weis, Cu{\'e}nod, Rieck, Dubuis, Graf,
+  Lang, Oberle, Brackmann, Sogaard, Egli, and Borgwardt]{weis2020topological}
+Caroline Weis, Aline Cu{\'e}nod, Bastian Rieck, Olivier Dubuis, Alexander Graf,
+  Claudia Lang, Michael Oberle, Max Brackmann, Kirstine~K. Sogaard, Adrian
+  Egli, and Karsten Borgwardt.
+\newblock Topological and kernel-based microbial phenotype prediction from
+  maldi-tof mass spectra.
+\newblock \emph{Bioinformatics}, 36\penalty0 (Suppl\_1):\penalty0 i30--i38,
+  2020{\natexlab{a}}.
+\newblock \doi{10.1093/bioinformatics/btaa429}.
+
+\bibitem[Weis et~al.(2020{\natexlab{b}})Weis, Cu{\'e}nod, Rieck, Egli, and
+  Borgwardt]{weis2020systematic}
+Caroline Weis, Aline Cu{\'e}nod, Bastian Rieck, Adrian Egli, and Karsten
+  Borgwardt.
+\newblock Direct antimicrobial resistance prediction from maldi-tof mass
+  spectra using machine learning.
+\newblock \emph{bioRxiv}, 2020{\natexlab{b}}.
+\newblock \doi{10.1101/2020.07.30.228411}.
+
+\bibitem[Weis et~al.(2022{\natexlab{a}})Weis, Cu{\'e}nod, Rieck, Dubuis, Graf,
+  Lang, Oberle, Brackmann, Sogaard, Osthoff, Egli, and
+  Borgwardt]{weis2022driams}
+Caroline Weis, Aline Cu{\'e}nod, Bastian Rieck, Olivier Dubuis, Alexander Graf,
+  Claudia Lang, Michael Oberle, Max Brackmann, Kirstine~K. Sogaard, Michael
+  Osthoff, Adrian Egli, and Karsten Borgwardt.
+\newblock Direct antimicrobial resistance prediction from clinical maldi-tof
+  mass spectra using machine learning.
+\newblock \emph{Nature Medicine}, 28:\penalty0 164--174, 2022{\natexlab{a}}.
+\newblock \doi{10.1038/s41591-021-01619-9}.
+
+\bibitem[Wang et~al.(2022)Wang, Hsieh, Chung, Chang, Horng, Lu, and
+  Huang]{wang2022vre}
+Hsin-Yao Wang, Tsung-Ting Hsieh, Chia-Ru Chung, Hung-Ching Chang, Jorng-Tzong
+  Horng, Jang-Jih Lu, and Jia-Hsin Huang.
+\newblock Efficiently predicting vancomycin resistance of enterococcus faecium
+  from maldi-tof ms spectra using a deep learning-based approach.
+\newblock \emph{Frontiers in Microbiology}, 13:\penalty0 821233, 2022.
+\newblock \doi{10.3389/fmicb.2022.821233}.
+
+\bibitem[Astudillo et~al.(2024)]{astudillo2024multilabel}
+Andrea Astudillo et~al.
+\newblock Multi-label classification to predict antibiotic resistance from raw
+  clinical maldi-tof mass spectrometry data.
+\newblock \emph{Scientific Reports}, 14:\penalty0 31283, 2024.
+\newblock \doi{10.1038/s41598-024-82697-w}.
+
+\bibitem[Weis et~al.(2022{\natexlab{b}})Weis, Cu{\'e}nod, Rieck,
+  et~al.]{driamsdryad}
+Caroline Weis, Aline Cu{\'e}nod, Bastian Rieck, et~al.
+\newblock Driams: Database of resistance information on antimicrobials and mass
+  spectra, 2022{\natexlab{b}}.
+
+\bibitem[Earle et~al.(2016)Earle, Wu, Charlesworth, Stoesser, Gordon, Walker,
+  Spencer, Iqbal, Clifton, Hopkins, Woodford, Smith, Ismail, Llewelyn, Peto,
+  Crook, McVean, Walker, and Wilson]{earle2016bacterialGwas}
+Sarah~G. Earle, Chieh-Hsi Wu, Jane Charlesworth, Nicole Stoesser, David~J.
+  Gordon, Timothy~M. Walker, C.~C.~A. Spencer, Zamin Iqbal, David~A. Clifton,
+  Katie~L. Hopkins, Neil Woodford, Emily~G. Smith, Nabil Ismail, Martin~J.
+  Llewelyn, Timothy E.~A. Peto, Derrick~W. Crook, Gil McVean, A.~Sarah Walker,
+  and Daniel~J. Wilson.
+\newblock Identifying lineage effects when controlling for population structure
+  improves power in bacterial association studies.
+\newblock \emph{Nature Microbiology}, 1:\penalty0 16041, 2016.
+\newblock \doi{10.1038/nmicrobiol.2016.41}.
+
+\bibitem[Yu et~al.(2025)Yu, Wheeler, and Barquist]{yu2025population}
+Yanying Yu, Nicole~E. Wheeler, and Lars Barquist.
+\newblock Biased sampling driven by bacterial population structure confounds
+  machine learning prediction of antimicrobial resistance.
+\newblock \emph{PLOS Biology}, 23:\penalty0 e3003539, 2025.
+\newblock \doi{10.1371/journal.pbio.3003539}.
+
+\bibitem[Collins et~al.(2015)Collins, Reitsma, Altman, and Moons]{tripod2015}
+Gary~S. Collins, Johannes~B. Reitsma, Douglas~G. Altman, and Karel G.~M. Moons.
+\newblock Transparent reporting of a multivariable prediction model for
+  individual prognosis or diagnosis (tripod): the tripod statement.
+\newblock \emph{Annals of Internal Medicine}, 162\penalty0 (1):\penalty0
+  55--63, 2015.
+\newblock \doi{10.7326/M14-0697}.
+
+\bibitem[Wolff et~al.(2019)Wolff, Moons, Riley, Whiting, Westwood, Collins,
+  Reitsma, Kleijnen, and Mallett]{probast2019}
+Robert~F. Wolff, Karel G.~M. Moons, Richard~D. Riley, Penny~F. Whiting, Marie
+  Westwood, Gary~S. Collins, Johannes~B. Reitsma, Jos Kleijnen, and Susan
+  Mallett.
+\newblock Probast: a tool to assess the risk of bias and applicability of
+  prediction model studies.
+\newblock \emph{Annals of Internal Medicine}, 170\penalty0 (1):\penalty0
+  51--58, 2019.
+\newblock \doi{10.7326/M18-1376}.
+
+\bibitem[Collins et~al.(2024)Collins, Moons, Dhiman, Riley, Beam, Van~Calster,
+  Ghassemi, Liu, Reitsma, van Smeden, Boulesteix, Camaradou, Challen, Damen,
+  Debray, et~al.]{tripodAI2024}
+Gary~S. Collins, Karel G.~M. Moons, Paul Dhiman, Richard~D. Riley, Andrew~L.
+  Beam, Ben Van~Calster, Marzyeh Ghassemi, Xiaoxuan Liu, Johannes~B. Reitsma,
+  Maarten van Smeden, Anne-Laure Boulesteix, Jenny Camaradou, Robert Challen,
+  Johanna~A. Damen, Thomas P.~A. Debray, et~al.
+\newblock Tripod+ai statement: updated guidance for reporting clinical
+  prediction models that use regression or machine learning methods.
+\newblock \emph{BMJ}, 385:\penalty0 e078378, 2024.
+\newblock \doi{10.1136/bmj-2023-078378}.
+
+\bibitem[Weis et~al.(2022{\natexlab{c}})Weis, Rieck, Balzer, Cu{\'e}nod, Egli,
+  and Borgwardt]{weis2022stratification}
+Caroline Weis, Bastian~A. Rieck, Sebastian Balzer, Aline Cu{\'e}nod, Adrian
+  Egli, and Karsten Borgwardt.
+\newblock Improved maldi-tof ms based antimicrobial resistance prediction
+  through hierarchical stratification.
+\newblock \emph{bioRxiv}, 2022{\natexlab{c}}.
+\newblock \doi{10.1101/2022.04.13.488198}.
+
+\bibitem[Rosenbaum and Rubin(1983)]{rosenbaumRubin1983}
+Paul~R. Rosenbaum and Donald~B. Rubin.
+\newblock The central role of the propensity score in observational studies for
+  causal effects.
+\newblock \emph{Biometrika}, 70\penalty0 (1):\penalty0 41--55, 1983.
+\newblock \doi{10.1093/biomet/70.1.41}.
+
+\bibitem[Austin(2011)]{austin2011propensity}
+Peter~C. Austin.
+\newblock An introduction to propensity score methods for reducing the effects
+  of confounding in observational studies.
+\newblock \emph{Multivariate Behavioral Research}, 46\penalty0 (3):\penalty0
+  399--424, 2011.
+\newblock \doi{10.1080/00273171.2011.568786}.
+
+\bibitem[Nicolas-Chanoine et~al.(2014)Nicolas-Chanoine, Bertrand, and
+  Madec]{nicolas2014st131}
+Marie-H{\'e}l{\`e}ne Nicolas-Chanoine, Xavier Bertrand, and Jean-Yves Madec.
+\newblock Escherichia coli st131, an intriguing clonal group.
+\newblock \emph{Clinical Microbiology Reviews}, 27:\penalty0 543--574, 2014.
+\newblock \doi{10.1128/CMR.00125-13}.
+
+\bibitem[Price et~al.(2013)Price, Johnson, Aziz, Clabots, Johnston,
+  Tchesnokova, Nordstrom, Billig, Chattopadhyay, Stegger, Andersen, Pearson,
+  Riddell, Rogers, Scholes, Kahl, Keim, and Sokurenko]{price2013st131}
+Lance~B. Price, James~R. Johnson, Maliha Aziz, Connie Clabots, Brian Johnston,
+  Veronika Tchesnokova, Lora Nordstrom, Erin Billig, Sujay Chattopadhyay, Marc
+  Stegger, Paal~S. Andersen, Talima Pearson, Kyle Riddell, Paul Rogers, Douglas
+  Scholes, Barbara Kahl, Paul Keim, and Evgeni~V. Sokurenko.
+\newblock The epidemic of extended-spectrum-beta-lactamase-producing
+  escherichia coli st131 is driven by a single highly pathogenic subclone,
+  h30-rx.
+\newblock \emph{mBio}, 4\penalty0 (6):\penalty0 e00377--13, 2013.
+\newblock \doi{10.1128/mBio.00377-13}.
+
+\bibitem[Ben~Zakour et~al.(2016)Ben~Zakour, Alsheikh-Hussain, Ashcroft,
+  Khanh~Nhu, Roberts, Stanton-Cook, Schembri, and Beatson]{benzakour2016st131}
+Nouri~L. Ben~Zakour, Abdulaziz~S. Alsheikh-Hussain, Melinda~M. Ashcroft,
+  Nguyen~T. Khanh~Nhu, Lester~W. Roberts, Matthew Stanton-Cook, Mark~A.
+  Schembri, and Scott~A. Beatson.
+\newblock Sequential acquisition of virulence and fluoroquinolone resistance
+  has shaped the evolution of escherichia coli st131.
+\newblock \emph{mBio}, 7\penalty0 (2):\penalty0 e00347--16, 2016.
+\newblock \doi{10.1128/mBio.00347-16}.
+
+\bibitem[Cant{\'o}n and Ruiz-Garbajosa(2011)]{canton2011coresistance}
+Rafael Cant{\'o}n and Patricia Ruiz-Garbajosa.
+\newblock Co-resistance: an opportunity for the bacteria and resistance genes.
+\newblock \emph{Current Opinion in Pharmacology}, 11\penalty0 (5):\penalty0
+  477--485, 2011.
+\newblock \doi{10.1016/j.coph.2011.07.007}.
+
+\bibitem[Pal et~al.(2015)Pal, Bengtsson-Palme, Kristiansson, and
+  Larsson]{pal2015cooccurrence}
+Chandan Pal, Johan Bengtsson-Palme, Erik Kristiansson, and D.~G.~Joakim
+  Larsson.
+\newblock Co-occurrence of resistance genes to antibiotics, biocides and metals
+  reveals novel insights into their co-selection potential.
+\newblock \emph{BMC Genomics}, 16:\penalty0 964, 2015.
+\newblock \doi{10.1186/s12864-015-2153-5}.
+
+\bibitem[Chambers(1997)]{chambers1997mrsa}
+Henry~F. Chambers.
+\newblock Methicillin resistance in staphylococci: molecular and biochemical
+  basis and clinical implications.
+\newblock \emph{Clinical Microbiology Reviews}, 10\penalty0 (4):\penalty0
+  781--791, 1997.
+\newblock \doi{10.1128/CMR.10.4.781}.
+
+\bibitem[Cu{\'e}nod et~al.(2023)Cu{\'e}nod, Agnetti, Seth-Smith,
+  et~al.]{cuenod2023papgii}
+Aline Cu{\'e}nod, Jessica Agnetti, Helena M.~B. Seth-Smith, et~al.
+\newblock Bacterial genome-wide association study substantiates papgii of
+  escherichia coli as a major risk factor for urosepsis.
+\newblock \emph{Genome Medicine}, 15:\penalty0 89, 2023.
+\newblock \doi{10.1186/s13073-023-01243-x}.
+
+\bibitem[Nakamura et~al.(2019)Nakamura, Komatsu, Ohno, Noguchi, Kondo, and
+  Hatano]{nakamura2019st131}
+Akihiro Nakamura, Masaru Komatsu, Yuki Ohno, Nobuyoshi Noguchi, Akira Kondo,
+  and Naoya Hatano.
+\newblock Identification of specific protein amino acid substitutions of
+  extended-spectrum beta-lactamase-producing escherichia coli st131: a
+  proteomics approach using mass spectrometry.
+\newblock \emph{Scientific Reports}, 9:\penalty0 8555, 2019.
+\newblock \doi{10.1038/s41598-019-45051-z}.
+
+\end{thebibliography}

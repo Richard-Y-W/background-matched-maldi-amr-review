@@ -1,0 +1,25 @@
+\begin{table}[ht]
+\centering
+\scriptsize
+\caption{Audit atlas coverage and outcome summary.}
+\label{tab:audit-atlas-summary}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lllrrrrrr}
+\toprule
+Atlas set & Model & Scope & Rows & Drugs & Sites & Interpretable & Retained/partial & Background-sensitive \\
+\midrule
+ecoli\_cnn & CNN/Mega & E. coli six-drug panel & 23 & 6 & 4 & 18 & 8 & 9 \\
+ecoli\_lgbm\_multi & LightGBM multi-task & E. coli six-drug panel & 23 & 6 & 4 & 18 & 7 & 10 \\
+ecoli\_lgbm\_single & LightGBM single-task & E. coli six-drug panel & 23 & 6 & 4 & 18 & 6 & 11 \\
+weis\_lr\_ecoli\_temporal\_a2018 & Weis LR & E. coli six-drug temporal A-2018 panel & 6 & 6 & 1 & 4 & 2 & 2 \\
+saureus\_cnn & CNN/Mega & S. aureus oxacillin panel & 25 & 7 & 4 & 23 & 12 & 7 \\
+saureus\_lgbm\_multi & LightGBM multi-task & S. aureus oxacillin panel & 25 & 7 & 4 & 23 & 13 & 7 \\
+saureus\_lgbm\_single & LightGBM single-task & S. aureus oxacillin panel & 25 & 7 & 4 & 23 & 14 & 8 \\
+klebsiella\_cnn & CNN/Mega & K. pneumoniae six-drug panel & 24 & 6 & 4 & 15 & 4 & 11 \\
+weis\_lr\_klebsiella\_ceftriaxone & Weis LR & K. pneumoniae ceftriaxone official-panel extension & 3 & 1 & 3 & 3 & 2 & 0 \\
+weis\_lr\_ecoli & Weis LR & E. coli Weis-style panel & 17 & 6 & 3 & 9 & 4 & 5 \\
+\bottomrule
+\end{tabular}%
+}
+\vspace{2mm}\parbox{0.95\linewidth}{\footnotesize The atlas combines background-matched audit rows, exact-background baselines, calibration checks and sensitivity summaries. Retained/partial counts include rows classified as retained or partial residual signal by the atlas rules.}
+\end{table}

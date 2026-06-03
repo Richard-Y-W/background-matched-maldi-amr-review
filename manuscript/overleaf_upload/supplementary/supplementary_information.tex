@@ -1,0 +1,187 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{caption}
+\usepackage{graphicx}
+\usepackage{microtype}
+
+\title{\bfseries Supplementary Information\\Background matching audits mass spectral antimicrobial resistance prediction}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section*{Supplementary Note 1: Why background matching is needed}
+
+Raw external AUC answers whether a model ranks resistant isolates above susceptible isolates at a target site. It does not answer whether that ranking is driven by focal-drug biology or by the resistant population in which the label occurs. In bacterial clinical data, resistance labels are structured by lineage, mobile elements, local prescribing ecology and co-resistance. A MALDI-TOF model can exploit this structure because spectra encode abundant cellular proteins and lineage-associated peak patterns.
+
+The background-matched audit controls the observable co-resistance component of this structure. For each focal drug, isolates are grouped by the AST labels of the other drugs in the same panel. The focal drug is excluded from the signature. Within valid strata, resistant and susceptible isolates have the same observed co-resistance background. If the model still separates them, it has residual within-background signal. If performance collapses, the original raw AUC was likely driven partly by background differences between strata.
+
+\section*{Supplementary Note 2: Interpretation of the three AUCs}
+
+\textbf{Raw AUC} is computed over all available isolates for the focal organism-drug-site comparison. It is the standard external performance metric.
+
+\textbf{Matched AUC} is computed after removing strata that lack enough resistant and susceptible isolates for the focal drug. It asks whether performance remains in the subset where within-background comparisons are possible.
+
+\textbf{Background-centered AUC} subtracts the mean model score within each valid background stratum before pooling and recomputing AUC. It is the strictest metric because it removes score shifts shared by all isolates in a background stratum.
+
+\section*{Supplementary Note 3: How to read low-retention rows}
+
+Low retention is not a model failure. It is an audit limitation. If a drug-site pair has few strata containing both resistant and susceptible isolates, then the data do not support a strong within-background conclusion. These rows should be reported as cautionary rather than interpreted as biological evidence.
+
+This is why DRIAMS-B ciprofloxacin is not used as main evidence despite a high centered AUC. The estimate is based on only 25 matched isolates and one valid stratum. The method intentionally makes this visible.
+
+\section*{Supplementary Figure S1: Cross-resistance network}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=\linewidth]{../figures/figure_4_cross_resistance_network.pdf}
+\caption{\textbf{Cross-resistance network in the expanded \textit{E.~coli} panel.} Edge width and shading encode pairwise phi correlation. Two strong blocks are evident: a fluoroquinolone block (ciprofloxacin/norfloxacin, $\phi = 0.976$) and an extended-spectrum cephalosporin block (ceftriaxone, ceftazidime and cefepime, $\phi = 0.804$--$0.884$). These co-resistance structures provide exploitable background signal for any model predicting drugs within either block. Source data: \texttt{source\_data\_fig4\_cross\_resistance\_edges\_all\_sites.csv}.}
+\label{suppfig:cross-resistance}
+\end{figure}
+
+\section*{Supplementary Figure S2: Falsification controls}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=\linewidth]{../figures/figure_6_falsification_controls.pdf}
+\caption{\textbf{Falsification controls for background-burden and within-background shuffled-label signal.} Negative observed-minus-burden values indicate rows where a simple non-focal resistance-burden score is competitive with the MALDI model. Shuffled-label controls preserve background strata while disrupting focal-label association.}
+\label{suppfig:falsification-controls}
+\end{figure}
+
+\section*{Supplementary Figure S3: \textit{S. aureus}/oxacillin audit}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=\linewidth]{../figures/figure_6_saureus_oxacillin_audit.pdf}
+\caption{\textbf{\textit{S. aureus}/oxacillin second-organism audit.} Oxacillin predictions retained background-centered signal at A-2018 and DRIAMS-C and exceeded the exact-background no-spectrum baseline at both sites. DRIAMS-B is shown for completeness but has only one valid matched stratum. This analysis demonstrates that the audit applies beyond \textit{E. coli}; it is not a systematic multi-organism atlas.}
+\label{suppfig:saureus-oxa}
+\end{figure}
+
+\section*{Supplementary Figure S4: Three-way decomposition}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=\linewidth]{../figures/figure_6_three_way_decomposition.pdf}
+\caption{\textbf{Four-panel three-score decomposition of MALDI and AST-background signal.} Each panel reports raw MALDI AUC, no-spectrum co-resistance-only AUC and background-centered MALDI AUC for the same organism-drug-site rows. The current version includes the \textit{K. pneumoniae}/ceftriaxone panel as a third-organism sparse-control case.}
+\label{suppfig:three-way}
+\end{figure}
+
+\section*{Supplementary Figure S5: Deployment decision flow}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=\linewidth]{../figures/figure_7_deployment_decision_flow.pdf}
+\caption{\textbf{Deployment decision flow.} Audit outcomes map to conservative validation, recalibration, retraining or no-deployment actions depending on retained signal, calibration and matched-support adequacy.}
+\label{suppfig:deployment-flow}
+\end{figure}
+
+\section*{Supplementary Figure S6: Framework comparison}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=\linewidth]{../figures/figure_7_framework_comparison.pdf}
+\caption{\textbf{Framework comparison.} The background-matched audit is positioned relative to prior MALDI-AMR evaluation and general clinical prediction reporting frameworks.}
+\label{suppfig:framework-comparison}
+\end{figure}
+
+\section*{Supplementary Figure S7: Audit atlas summary}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=\linewidth]{../figures/figure_8_audit_atlas_summary.pdf}
+\caption{\textbf{Audit atlas coverage and outcomes.} Each bar summarizes one prediction set in the current atlas. Segments show retained or partial residual signal, background-sensitive rows, sparse or non-interpretable rows and other interpretable outcomes.}
+\label{suppfig:audit-atlas}
+\end{figure}
+
+\section*{Supplementary Table 1: Claim guardrails}
+
+\input{../tables/table_6_claim_guardrails.tex}
+
+\section*{Supplementary Table 2: Compact model-family table}
+
+\input{../tables/table_2_model_replication_compact.tex}
+
+\section*{Supplementary Table 3: Full \textit{K. pneumoniae} six-drug audit}
+
+\input{../tables/table_klebsiella_panel_audit.tex}
+
+\section*{Supplementary Table 4: Primary background-matched audit}
+
+\input{../tables/table_1_primary_audit.tex}
+
+\section*{Supplementary Table 5: Full model-family replication}
+
+\input{../tables/table_2_model_replication.tex}
+
+\section*{Supplementary Table 6: Split model-family replication}
+
+\input{../tables/table_2_model_replication_split.tex}
+
+\section*{Supplementary Table 7: Cross-resistance edges}
+
+\input{../tables/table_3_cross_resistance_edges.tex}
+
+\section*{Supplementary Table 8: Model classes with Weis/Borgwardt rows}
+
+\input{../tables/table_3_model_class_with_weis.tex}
+
+\section*{Supplementary Table 9: Public WGS-linked MALDI AUC}
+
+\input{../tables/table_4_public_wgs_auc.tex}
+
+\section*{Supplementary Table 10: Biomarker enrichment}
+
+\input{../tables/table_5_biomarker_enrichment.tex}
+
+\section*{Supplementary Table 11: UPEC clone-control analysis}
+
+\input{../tables/table_6_upec_clone_control.tex}
+
+\section*{Supplementary Table 12: Framework comparison}
+
+\input{../tables/table_7_framework_comparison.tex}
+
+\section*{Supplementary Table 13: Audit atlas summary}
+
+\input{../tables/table_audit_atlas_summary.tex}
+
+\section*{Supplementary Table 14: Representative organism extension}
+
+\input{../tables/table_organism_extension_representative.tex}
+
+\section*{Supplementary Table 15: Source data files}
+
+\begin{table}[ht]
+\centering
+\small
+\caption{Source-data files distributed with the manuscript package.}
+\begin{tabular}{lll}
+\toprule
+Display item & File & Description \\
+\midrule
+Figure 2 & \texttt{source\_data\_fig2\_primary\_background\_audit.csv} & Primary raw and background-centered AUC rows. \\
+Figure 3 & \texttt{source\_data\_fig3\_model\_family\_replication.csv} & CNN, LGBM and Weis/Borgwardt model-family audit rows. \\
+Figure 4 & \texttt{source\_data\_fig5a\_public\_wgs\_maldi\_auc.csv} & Public WGS-linked MALDI AUC values. \\
+Figure 4 & \texttt{source\_data\_fig5b\_proteomic\_biomarker\_enrichment.csv} & ST131 biomarker enrichment values. \\
+Supp.\ Fig.\ S1 & \texttt{source\_data\_fig4\_cross\_resistance\_edges\_all\_sites.csv} & Cross-resistance edges used for the phi heatmap. \\
+Supp.\ Fig.\ S4 & \texttt{source\_data\_fig6\_three\_way\_decomposition.csv} & Raw, co-resistance-only and background-centered AUC rows for the three-way decomposition. \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section*{Supplementary Note 4: What would strengthen the biological claim}
+
+The current evidence supports background sensitivity and the need for background-matched evaluation. It does not directly identify the DRIAMS clone or protein features. The next strongest additions would be:
+
+\begin{itemize}
+  \item WGS or MLST labels linked directly to DRIAMS isolates.
+  \item Clone-controlled public WGS-linked MALDI analyses within ST131 and non-ST131 strata.
+  \item Independent MALDI-AMR deployment validation on a non-DRIAMS dataset.
+  \item MS/MS, MALDI-TOF/TOF or LC-MS/MS validation of discriminative m/z peaks.
+\end{itemize}
+
+\end{document}

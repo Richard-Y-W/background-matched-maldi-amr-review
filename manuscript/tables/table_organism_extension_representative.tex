@@ -1,0 +1,27 @@
+\begin{table}[ht]
+\centering
+\scriptsize
+\caption{Representative organism-extension audit rows.}
+\label{tab:organism-extension}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lllrrrrll}
+\toprule
+Organism/drug & Model & Site & Raw AUC & Centered AUC & Background AUC & Retention (\%) & Strata & Interpretation \\
+\midrule
+S. aureus / Oxacillin & CNN/Mega & A-2018 & 0.838 & 0.763 & 0.762 & 60.1 & 9 & strong within background signal \\
+S. aureus / Oxacillin & CNN/Mega & DRIAMS-B & 0.775 & 0.864 & 0.795 & 52.6 & 1 & background only competitive but residual signal \\
+S. aureus / Oxacillin & CNN/Mega & DRIAMS-C & 0.725 & 0.699 & 0.627 & 59.6 & 2 & moderate within background signal \\
+S. aureus / Oxacillin & Weis LR & DRIAMS-B & 0.667 & 0.667 & -- & 100.0 & 1 & caution low matched support \\
+S. aureus / Oxacillin & Weis LR & DRIAMS-C & 0.543 & 0.543 & -- & 100.0 & 1 & weak raw signal \\
+K. pneumoniae / Ceftriaxone & CNN/Mega & A-2018 & 0.804 & 0.500 & 0.981 & 3.3 & 1 & background only competitive and weak residual \\
+K. pneumoniae / Ceftriaxone & CNN/Mega & DRIAMS-B & 0.404 & -- & 1.000 & 0.0 & 0 & not interpretable or sparse \\
+K. pneumoniae / Ceftriaxone & CNN/Mega & DRIAMS-C & 0.698 & -- & 1.000 & 0.0 & 0 & not interpretable or sparse \\
+K. pneumoniae / Ceftriaxone & CNN/Mega & DRIAMS-D & 0.630 & 0.424 & 0.973 & 81.8 & 2 & background only competitive and weak residual \\
+K. pneumoniae / Ceftriaxone & Weis LR & DRIAMS-B & 0.509 & 0.509 & -- & 100.0 & 1 & near chance or ambiguous \\
+K. pneumoniae / Ceftriaxone & Weis LR & DRIAMS-C & 0.672 & 0.672 & -- & 100.0 & 1 & cautionary moderate within background signal \\
+K. pneumoniae / Ceftriaxone & Weis LR & DRIAMS-D & 0.596 & 0.596 & -- & 100.0 & 1 & weak or partial within background signal \\
+\bottomrule
+\end{tabular}%
+}
+\vspace{2mm}\parbox{0.95\linewidth}{\footnotesize Representative rows test whether the audit is only an E. coli/ciprofloxacin story. S. aureus/oxacillin is a second-organism retained-signal case; K. pneumoniae/ceftriaxone is a third-organism background-sensitive or sparse-control case. Weis LR rows are compatibility exports; background-only AUC was not computed for those rows.}
+\end{table}

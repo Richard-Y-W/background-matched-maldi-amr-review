@@ -1,0 +1,5 @@
+organism,drug,predicted_outcome,clonal_conservation_score,co_resistance_collinearity,rationale,locked_before_run
+Escherichia coli,Ciprofloxacin,partial_retention,high,high,fluoroquinolone resistance is expected to retain lineage-linked residual signal after beta-lactam background matching,yes
+Escherichia coli,Amoxicillin-Clavulanic acid,collapse,low,moderate,mixed beta-lactam phenotype is expected to be heterogeneous and background-sensitive,yes
+Staphylococcus aureus,Oxacillin,retention,high,moderate,MRSA/MSSA status is expected to retain within-background signal because mecA-linked resistance often tracks stable population structure,yes
+Klebsiella pneumoniae,Ceftriaxone,collapse_or_sparse,moderate,high,third-organism ceftriaxone settings may be ESBL/co-resistance dominated or limited by sparse matched strata,yes

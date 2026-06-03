@@ -1,0 +1,11 @@
+display_item,file,description
+Figure 2,source_data_fig2_primary_background_audit.csv,"Raw, matched and background-centered AUC values for the primary E. coli contrast."
+Figure 3,source_data_fig3_model_family_replication.csv,"Completed CNN/Mega, LightGBM multi-task, LightGBM single-task and Weis LR compatibility raw-to-centered model-class audit rows."
+Figure 4,source_data_fig4_cross_resistance_edges_all_sites.csv,All-sites E. coli cross-resistance edges used for the phi heatmap and strongest-edge annotations.
+Figure 5a,source_data_fig5a_public_wgs_maldi_auc.csv,Public UPEC WGS-linked MALDI peak-feature AUCs.
+Figure 5b,source_data_fig5b_proteomic_biomarker_enrichment.csv,Published ST131 biomarker enrichment results.
+Figure 6,source_data_fig6_three_way_decomposition.csv,"Three-way AUC decomposition: raw MALDI, co-resistance-only, background-centred, for E. coli Cipro/Amox-Clav and S. aureus/Oxacillin."
+Table 3,source_data_table3_model_class_with_weis.csv,"Model-class audit cells comparing CNN/Mega, LightGBM multi-task, LightGBM single-task and Weis LR compatibility rows."
+Klebsiella table,source_data_table_klebsiella_panel_audit.csv,Klebsiella pneumoniae CNN/Mega six-drug panel rows plus Weis LR ceftriaxone compatibility rows.
+Atlas table,source_data_table_audit_atlas_summary.csv,Audit atlas coverage and outcome counts by prediction set.
+Figure 8,source_data_fig8_audit_atlas_summary.csv,Audit atlas coverage and outcome counts used for the atlas summary graph.
