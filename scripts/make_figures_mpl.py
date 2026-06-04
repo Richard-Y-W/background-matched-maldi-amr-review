@@ -250,7 +250,7 @@ def _dumbbell_panel(ax, sub: pd.DataFrame, color: str,
                         ha="left", va="center", transform=blend, clip_on=False)
 
     ax.set_yticks(list(range(n)))
-    ylabels = list(reversed(sub["site"].tolist()))
+    ylabels = sub["site"].tolist()
     ax.set_yticklabels(ylabels, fontsize=8, color=DARK)
 
 
@@ -262,7 +262,7 @@ def _primary_forest_panel(ax, sub: pd.DataFrame, color: str,
     sub["_ord"] = sub["site"].map(SITE_ORDER).fillna(99)
     sub = sub.sort_values("_ord").reset_index(drop=True)
     y_positions = list(reversed(range(len(sub))))
-    ylabels = list(reversed(sub["site"].tolist()))
+    ylabels = sub["site"].tolist()
     _style_forest_ax(ax, xmin, xmax, y_positions, ylabels)
 
     for i, row in sub.iterrows():
@@ -288,6 +288,19 @@ def _primary_forest_panel(ax, sub: pd.DataFrame, color: str,
                            s=28, marker="s", linewidths=1.1, zorder=6)
             else:
                 ax.scatter(cen, cen_y, color=cen_c, s=28, marker="s", zorder=6, linewidths=0)
+        retention = float(row.get("matched_retention_pct", math.nan))
+        n_matched = row.get("n_matched", math.nan)
+        valid_strata = row.get("valid_strata", math.nan)
+        support = []
+        if not math.isnan(retention):
+            support.append(f"ret {retention:.1f}%")
+        if pd.notna(n_matched):
+            support.append(f"n={int(float(n_matched))}")
+        if pd.notna(valid_strata):
+            support.append(f"S={int(float(valid_strata))}")
+        if support:
+            ax.text(0.985, y_base, "; ".join(support), fontsize=5.7, color=GRAY,
+                    ha="right", va="center", transform=ax.get_yaxis_transform())
 
 
 # Figure 3: Model-class matrix
@@ -715,7 +728,12 @@ def figure_3_model_replication(model_df: pd.DataFrame,
                     text_color = M_GRAY
                 else:
                     face = _auc_cell_color(cen)
-                    label = f"{raw:.2f} -> {cen:.2f}"
+                    ret = float(rec.get("matched_retention", math.nan))
+                    strata = rec.get("valid_strata", math.nan)
+                    support = ""
+                    if not math.isnan(ret) and pd.notna(strata):
+                        support = f"\nret {ret * 100:.0f}%; S={int(float(strata))}"
+                    label = f"{raw:.2f} -> {cen:.2f}{support}"
                     text_color = DARK
                 if caution:
                     label += "*"
@@ -724,14 +742,14 @@ def figure_3_model_replication(model_df: pd.DataFrame,
                                             row_h * 0.84, facecolor=face,
                                             edgecolor=edge_color,
                                             lw=1.0))
-            ax.text(x + col_w / 2, y, label, fontsize=7.0, color=text_color,
-                    ha="center", va="center")
+            ax.text(x + col_w / 2, y, label, fontsize=5.9, color=text_color,
+                    ha="center", va="center", linespacing=1.05)
     caption = (
         "Cells show raw AUC followed by background-centered AUC for CNN/Mega, multi-task LightGBM, "
         "single-task LightGBM and Weis/Borgwardt LR rows. CNN and LightGBM use the expanded study panels. "
         "Weis/Borgwardt rows are shown separately: exact upstream parity was verified only for the official LR "
         "subset, while other Weis-format rows test audit portability rather than serve as pooled benchmarks. "
-        "Asterisks mark low matched support; retention and valid-stratum counts are reported in the source data."
+        "Asterisks mark low matched support; the second line reports matched retention and valid-stratum count."
     )
     ax.text(
         0.04,
