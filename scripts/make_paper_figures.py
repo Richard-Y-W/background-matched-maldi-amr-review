@@ -40,13 +40,13 @@ def main(argv: list[str] | None = None) -> None:
     print("Running:", " ".join(cmd), flush=True)
     subprocess.run(cmd, check=True)
 
-    atlas_table_cmd = [sys.executable, str(ATLAS_TABLE_BUILDER)]
-    print("Running:", " ".join(atlas_table_cmd), flush=True)
-    subprocess.run(atlas_table_cmd, check=True)
-
     manuscript_cmd = [sys.executable, str(MANUSCRIPT_FIGURE_BUILDER)]
     print("Running:", " ".join(manuscript_cmd), flush=True)
     subprocess.run(manuscript_cmd, check=True)
+
+    atlas_table_cmd = [sys.executable, str(ATLAS_TABLE_BUILDER)]
+    print("Running:", " ".join(atlas_table_cmd), flush=True)
+    subprocess.run(atlas_table_cmd, check=True)
 
 
 if __name__ == "__main__":
